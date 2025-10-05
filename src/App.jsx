@@ -1,14 +1,12 @@
 import NavBar from "./components/NavBar/NavBar";
-import ItemListConteiner from "./components/ItemListConteiner/ItemListConteiner";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 function App() {
   return (
     <>
       <NavBar />
-      <ItemListConteiner />
+      <ItemListContainer greeting="¡Bienvenido a Juanita!" />
     </>
   );
 }
 
 export default App;
-
-//no anda el import revisar el nombre del todos los archivos

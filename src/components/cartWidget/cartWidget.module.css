@@ -1,9 +1,4 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-.carrito {
+.cart {
   display: flex;
   color: aqua;
   font-size: 1.5rem;

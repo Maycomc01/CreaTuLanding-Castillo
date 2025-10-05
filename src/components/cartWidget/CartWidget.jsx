@@ -1,8 +1,8 @@
-import "./cartWidget.css";
+import styles from "./cartWidget.module.css";
 const cartWidget = () => {
   return (
-    <div className="carrito">
-      🛒<span>3</span>
+    <div className={styles.cart}>
+      🛒<span>0</span>
     </div>
   );
 };
