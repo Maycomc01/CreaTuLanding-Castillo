@@ -1,5 +1,6 @@
 import styles from "./NavBar.module.css";
 import CartWidget from "../cartWidget/CartWidget";
+import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <nav className={styles.navbar}>
@@ -8,11 +9,11 @@ const NavBar = () => {
         <h1 className={styles.nombre}>Juanita de las nieves</h1>
       </header>
       <ul className={styles.navLinks}>
-        <li>inicio</li>
-        <li>Librería</li>
-        <li>Marroquinería</li>
-        <li>Oficina</li>
-        <li>Combos</li>
+        <NavLink to="/">Inicio</NavLink>
+        <NavLink to="/libreria">Librería</NavLink>
+        <NavLink to="/marroquinería">Marrroquinería</NavLink>
+        <NavLink to="/Oficina">Oficina</NavLink>
+        <NavLink to="/Promociones">Promociones</NavLink>
       </ul>
       <CartWidget />
     </nav>
