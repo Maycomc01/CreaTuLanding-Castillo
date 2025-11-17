@@ -12,7 +12,7 @@ Una estructura modula permite organizar el código de manera clara y escalable. 
 
 1) Clona el repositorio:
 ```bash 
-git clone https:https://github.com/Maycomc01/CreaTuLanding-Castillo.git
+git clone https://github.com/Maycomc01/CreaTuLanding-Castillo.git
 ```
 2) Entrar al proyecto
 ```bash 
