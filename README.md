@@ -16,7 +16,7 @@ git clone https://github.com/Maycomc01/CreaTuLanding-Castillo.git
 ```
 2) Entrar al proyecto
 ```bash 
-cd CreaTuLanding-Castillo.git
+cd CreaTuLanding-Castillo
 ```
 3) Instalar Dependencias
 ```bash
