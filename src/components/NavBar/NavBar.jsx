@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav className={styles.navbar}>
       <header className={styles.presentacion}>
         <img className={styles.img} src="../src/img/logo.png" alt="logo" />
-        <h1 className={styles.nombre}>Juanita de las nieves</h1>
+        <h1 className={styles.nombre}>Juanita</h1>
       </header>
       <ul className={styles.navLinks}>
         <NavLink to="/">Inicio</NavLink>
