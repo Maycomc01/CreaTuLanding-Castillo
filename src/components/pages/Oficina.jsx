@@ -1,11 +1,12 @@
 import FetchProduct from "../FetchProduct";
-
+import styles from "./pages.module.css";
 const Oficina = () => {
   return (
     <>
-      <h1> Productos de Oficina</h1>;
-      <FetchProduct />
+      <h1 className={styles.title}>Productos de Oficina</h1>
+      <FetchProduct categoria="oficina" />
     </>
   );
 };
+
 export default Oficina;

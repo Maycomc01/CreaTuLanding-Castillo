@@ -6,7 +6,6 @@
 }
 
 .navbar {
-  box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -14,26 +13,37 @@
   background-color: violet;
   color: black;
 }
+
 .presentacion {
   display: flex;
   align-items: center;
 }
+
 .img {
   height: 90px;
   width: 90px;
   border-radius: 35px;
 }
+
 .nombre {
   padding: 15px;
   font-size: 2.5rem;
 }
 
 .navLinks {
-  font-weight: bold;
-  font-size: 1.5rem;
   list-style: none;
   display: flex;
   gap: 20px;
-  cursor: pointer;
-  text-decoration-line: none;
+}
+
+.link {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.link.active {
+  text-decoration: none;
+  font-weight: bold;
 }

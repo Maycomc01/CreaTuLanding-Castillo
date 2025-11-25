@@ -1,10 +1,15 @@
-import styles from "./cartWidget.module.css";
-const cartWidget = () => {
-  return (
-    <div className={styles.cart}>
-      🛒<span>0</span>
-    </div>
-  );
-};
+import { Link } from "react-router-dom";
+import { useCart } from "../../context/CartContext";
+import styles from "./CartWidget.module.css";
 
-export default cartWidget;
+export default function CartWidget() {
+  const { totalCount } = useCart();
+
+  return (
+    <Link to="/carrito" className={styles.cart}>
+      <span className={styles.icon}>🛒</span>
+
+      {totalCount > 0 && <span className={styles.badge}>{totalCount}</span>}
+    </Link>
+  );
+}

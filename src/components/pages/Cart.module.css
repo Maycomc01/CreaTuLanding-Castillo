@@ -1,0 +1,195 @@
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 12px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item {
+  display: flex;
+  gap: 12px;
+  border: 1px solid #fdb7ea;
+  padding: 12px;
+  border-radius: 10px;
+  align-items: center;
+  background: #fdb7ea;
+}
+
+.thumb {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+
+.info {
+  flex: 1;
+  background-color: #fdb7ea;
+}
+
+.name {
+  background-color: #fdb7ea;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.price {
+  background-color: #fdb7ea;
+  margin-top: 6px;
+  font-size: 1.05rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.stock {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #fdb7ea;
+}
+
+.controls {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: #fdb7ea;
+}
+
+.smallBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: none;
+  background: #f0f0f0;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.smallBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.qty {
+  min-width: 28px;
+  text-align: center;
+  font-weight: 700;
+  background-color: #fdb7ea;
+}
+
+.removeBtn {
+  margin-left: 8px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.summary {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.clearBtn {
+  background: #ffdccc;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.checkoutBtn {
+  background: #fdb7ea;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.checkoutBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 999;
+}
+
+.modalContent {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  width: 360px;
+}
+
+.modalContent label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modalContent input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.modalActions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.cancelBtn {
+  background: #eee;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.confirmBtn {
+  background: #b7b1f2;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.err {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}

@@ -1,11 +1,13 @@
 import FetchProduct from "../FetchProduct";
+import styles from "./pages.module.css";
 
-const Marrroquinería = () => {
+const Marroquineria = () => {
   return (
     <>
-      <h1> Productos de Marroquinería</h1>;
-      <FetchProduct />
+      <h1 className={styles.title}>Productos de Marroquinería</h1>
+      <FetchProduct categoria="marroquineria" />
     </>
   );
 };
-export default Marrroquinería;
+
+export default Marroquineria;
