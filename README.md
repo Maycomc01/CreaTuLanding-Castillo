@@ -10,6 +10,7 @@ Este proyecto fue mutano con las entregas hasta el punto final que es esta versi
 ## Estructura del proyecto 📂
 
 Una estructura modula permite organizar el código de manera clara y escalable. Cada módulo encapsula funcionalidades específicas, combinando componentes, estilos, pruebas y lógica relacionada, lo que facilita el mantenimiento y la colaboración en equipo.
+```bash
 src/
 │── App.jsx
 │── main.jsx
@@ -44,6 +45,7 @@ src/
 └── img/
 ├── logo.png
 └── banner01.jpg
+```
 
 ## Instalación 🛠️
 
