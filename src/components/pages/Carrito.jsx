@@ -2,14 +2,16 @@ import { useCart } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 import styles from "./Cart.module.css";
 
-export default function Carrito() {
+function Carrito() {
   const { cart, addToCart, decrease, removeItem, totalPrice } = useCart();
 
   if (!cart || cart.length === 0) {
     return (
       <div className={styles.container}>
         <h2>El carrito está vacío</h2>
-        <Link to="/">Volver al inicio</Link>
+        <Link to="/">
+          <button className={styles.clearBtn}>Volver al inicio</button>
+        </Link>
       </div>
     );
   }
@@ -72,10 +74,12 @@ export default function Carrito() {
           <Link to="/">
             <button className={styles.clearBtn}>Seguir comprando</button>
           </Link>
-
-          <button className={styles.checkoutBtn}>Finalizar compra</button>
+          <Link to="/CheckOut">
+            <button className={styles.checkoutBtn}>Finalizar compra</button>
+          </Link>
         </div>
       </div>
     </div>
   );
 }
+export default Carrito;

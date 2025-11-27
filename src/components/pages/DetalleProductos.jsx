@@ -35,20 +35,14 @@ const DetalleProductos = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Detalle del Producto</h1>
-
-      <h2 className={styles.title}>{producto.nombre}</h2>
-
+      <h1 className={styles.title}>{producto.nombre}</h1>
       <img className={styles.image} src={producto.img} alt={producto.nombre} />
-
       <p className={styles.price}>
         <strong>Precio:</strong> ${producto.precio}
       </p>
-
       <p className={styles.description}>
         <strong>Descripción:</strong> {producto.detalle}
       </p>
-
       <button onClick={() => navigate(-1)} className={styles.backBtn}>
         Volver
       </button>

@@ -8,6 +8,7 @@ import Promociones from "./components/pages/Promociones";
 import NotFound from "./components/pages/NotFound";
 import DetalleProductos from "./components/pages/DetalleProductos";
 import Carrito from "./components/pages/Carrito";
+import CheckOut from "./components/pages/CheckOut";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Oficina" element={<Oficina />} />
         <Route path="/Promociones" element={<Promociones />} />
         <Route path="/carrito" element={<Carrito />} />
+        <Route path="/CheckOut" element={<CheckOut />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

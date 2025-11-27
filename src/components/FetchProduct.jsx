@@ -6,7 +6,12 @@ import styles from "./FetchProduct.module.css";
 import { useCart } from "../context/CartContext";
 
 const formatPrice = (num) => {
-  return "$ " + num.toLocaleString("es-AR");
+  if (num === undefined || num === null) return "$ —";
+
+  const number = Number(num);
+  if (isNaN(number)) return "$ —";
+
+  return "$ " + number.toLocaleString("es-AR");
 };
 
 function FetchProduct({ categoria }) {

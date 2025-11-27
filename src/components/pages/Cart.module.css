@@ -47,13 +47,7 @@
   font-size: 1.05rem;
   color: #333;
   text-transform: uppercase;
-}
-
-.stock {
-  margin-top: 6px;
-  font-size: 0.9rem;
-  color: #666;
-  background-color: #fdb7ea;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .controls {
@@ -119,6 +113,10 @@
   text-transform: uppercase;
 }
 
+.clearBtn:hover {
+  background: #e6c7b8;
+}
+
 .checkoutBtn {
   background: #fdb7ea;
   border: none;
@@ -126,70 +124,14 @@
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.checkoutBtn:hover {
+  background: #e09ed1;
 }
 
 .checkoutBtn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-}
-
-/* Modal */
-.modal {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 999;
-}
-
-.modalContent {
-  background: white;
-  padding: 18px;
-  border-radius: 12px;
-  width: 360px;
-}
-
-.modalContent label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.modalContent input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 6px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-
-.modalActions {
-  margin-top: 12px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.cancelBtn {
-  background: #eee;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.confirmBtn {
-  background: #b7b1f2;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
-}
-
-.err {
-  color: #ff6b6b;
-  font-size: 0.85rem;
-  margin-top: 4px;
 }
