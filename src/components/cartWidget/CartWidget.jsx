@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
-import styles from "./CartWidget.module.css";
+import styles from "./cartWidget.module.css";
 
 function CartWidget() {
   const { totalCount } = useCart();
